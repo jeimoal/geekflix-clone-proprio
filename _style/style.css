@@ -9,9 +9,12 @@
     box-sizing: border-box;
 }
 
+/*Atributos base*/
+
 body {
     background: var(--preta);
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
 }
 
 header .container {
@@ -35,4 +38,27 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/*Banner principal*/
+
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(/_images/arcane_banner_1280.jpg);
+    background-size: cover;
+    }
+
+.filme-principal .sinopse {
+    margin-bottom: 40px;
+}
+
+.sinopse {
+    width: 450px;
+    height: auto;
+    padding: 10px;
 }
