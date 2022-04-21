@@ -1,0 +1,111 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Atributos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Banner principal*/
+
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    font-size: 16px;
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(arcane_banner_1280.jpg);
+    background-size: cover;
+    }
+
+.filme-principal .sinopse {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.sinopse {
+    width: 450px;
+    height: auto;
+    padding: 10px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-right: 15px;    
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao > a:hover {
+    color: black;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
